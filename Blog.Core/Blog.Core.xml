@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Blog.Core</name>
+    </assembly>
+    <members>
+        <member name="T:Blog.Core.Controllers.WeatherForecastController">
+            <summary>
+            WeatherForecastController
+            </summary>
+        </member>
+        <member name="M:Blog.Core.Controllers.WeatherForecastController.#ctor(Microsoft.Extensions.Logging.ILogger{Blog.Core.Controllers.WeatherForecastController})">
+            <summary>
+            WeatherForecastController
+            </summary>
+            <param name="logger"></param>
+        </member>
+        <member name="M:Blog.Core.Controllers.WeatherForecastController.Get">
+            <summary>
+            WeatherForecast
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Blog.Core.Controllers.WeatherForecastController.Get(Blog.Core.Controllers.ProductDto)">
+            <summary>
+            Get
+            </summary>
+            <param name="dto"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Blog.Core.Controllers.ProductDto.ProductId">
+            <summary>
+            产品ID
+            </summary>
+        </member>
+        <member name="P:Blog.Core.Controllers.ProductDto.Name">
+            <summary>
+            产品名称
+            </summary>
+        </member>
+        <member name="P:Blog.Core.Controllers.ProductDto.ProductCode">
+            <summary>
+            产品编码
+            </summary>
+        </member>
+    </members>
+</doc>

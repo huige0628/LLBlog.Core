@@ -6,3 +6,12 @@ E:\Code\LLBlog.Core\Blog.Core.IRepository\obj\Debug\netstandard2.0\Blog.Core.IRe
 E:\Code\LLBlog.Core\Blog.Core.IRepository\obj\Debug\netstandard2.0\Blog.Core.IRepository.csproj.CoreCompileInputs.cache
 E:\Code\LLBlog.Core\Blog.Core.IRepository\obj\Debug\netstandard2.0\Blog.Core.IRepository.dll
 E:\Code\LLBlog.Core\Blog.Core.IRepository\obj\Debug\netstandard2.0\Blog.Core.IRepository.pdb
+H:\Source\NetCore\Blog.Core\Blog.Core.IRepository\bin\Debug\netstandard2.0\Blog.Core.IRepository.deps.json
+H:\Source\NetCore\Blog.Core\Blog.Core.IRepository\bin\Debug\netstandard2.0\Blog.Core.IRepository.dll
+H:\Source\NetCore\Blog.Core\Blog.Core.IRepository\bin\Debug\netstandard2.0\Blog.Core.IRepository.pdb
+H:\Source\NetCore\Blog.Core\Blog.Core.IRepository\obj\Debug\netstandard2.0\Blog.Core.IRepository.csproj.CoreCompileInputs.cache
+H:\Source\NetCore\Blog.Core\Blog.Core.IRepository\obj\Debug\netstandard2.0\Blog.Core.IRepository.AssemblyInfoInputs.cache
+H:\Source\NetCore\Blog.Core\Blog.Core.IRepository\obj\Debug\netstandard2.0\Blog.Core.IRepository.AssemblyInfo.cs
+H:\Source\NetCore\Blog.Core\Blog.Core.IRepository\obj\Debug\netstandard2.0\Blog.Core.IRepository.dll
+H:\Source\NetCore\Blog.Core\Blog.Core.IRepository\obj\Debug\netstandard2.0\Blog.Core.IRepository.pdb
+H:\Source\NetCore\Blog.Core\Blog.Core.IRepository\obj\Debug\netstandard2.0\Blog.Core.IRepository.csprojAssemblyReference.cache

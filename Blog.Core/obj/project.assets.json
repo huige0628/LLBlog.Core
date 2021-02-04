@@ -865,6 +865,66 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlDocument.dll": {}
         }
+      },
+      "Blog.Core.IRepository/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Blog.Core.IRepository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Blog.Core.IRepository.dll": {}
+        }
+      },
+      "Blog.Core.IService/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Blog.Core.IService.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Blog.Core.IService.dll": {}
+        }
+      },
+      "Blog.Core.Model/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Blog.Core.Model.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Blog.Core.Model.dll": {}
+        }
+      },
+      "Blog.Core.Repository/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Blog.Core.IRepository": "1.0.0",
+          "Blog.Core.Model": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Blog.Core.Repository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Blog.Core.Repository.dll": {}
+        }
+      },
+      "Blog.Core.Service/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Blog.Core.IRepository": "1.0.0",
+          "Blog.Core.IService": "1.0.0",
+          "Blog.Core.Model": "1.0.0",
+          "Blog.Core.Repository": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Blog.Core.Service.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Blog.Core.Service.dll": {}
+        }
       }
     }
   },
@@ -885,7 +945,7 @@
       ]
     },
     "Microsoft.CSharp/4.5.0": {
-      "sha512": "EGoBmf3Na2ppbhPePDE9PlX81r1HuOZH5twBrq7couJZiPTjUnD3648balerQJO6EJ8Sj+43+XuRwQ7r+3tE3w==",
+      "sha512": "kaj6Wb4qoMuH3HySFJhxwQfe8R/sJsNJnANrvv8WdFPMoNbKY5htfNscv+LHCu5ipz+49m2e+WQXpLXr9XYemQ==",
       "type": "package",
       "path": "microsoft.csharp/4.5.0",
       "files": [
@@ -1119,7 +1179,7 @@
       ]
     },
     "Newtonsoft.Json/10.0.1": {
-      "sha512": "MOUhQfeI43upq9QiEv+7YYTDQPtEZEj9xB50MgplO1XF/aumP0f+TCYIHpZEmfsiahJJaXt/gdRFYLFEoF2VyQ==",
+      "sha512": "ebWzW9j2nwxQeBo59As2TYn7nYr9BHicqqCwHOD1Vdo+50HBtLPuqdiCYJcLdTRknpYis/DSEOQz5KmZxwrIAg==",
       "type": "package",
       "path": "newtonsoft.json/10.0.1",
       "hasTools": true,
@@ -3098,7 +3158,7 @@
       ]
     },
     "System.Security.Cryptography.Cng/4.5.0": {
-      "sha512": "O4tqXxWCD8y1IU1VTgzbuBFwoRahrADhDUxHjwezhHCsqyFNyQ5EytjWBxu0EsZuH14b4UO2pFkG063K2h/9Ug==",
+      "sha512": "WG3r7EyjUe9CMPFSs6bty5doUqT+q9pbI80hlNzo2SkPkZ4VTuZkGWjpp77JB8+uaL4DFPRdBsAY+DX3dBK92A==",
       "type": "package",
       "path": "system.security.cryptography.cng/4.5.0",
       "files": [
@@ -3715,33 +3775,56 @@
         "system.xml.xmldocument.4.3.0.nupkg.sha512",
         "system.xml.xmldocument.nuspec"
       ]
+    },
+    "Blog.Core.IRepository/1.0.0": {
+      "type": "project",
+      "path": "../Blog.Core.IRepository/Blog.Core.IRepository.csproj",
+      "msbuildProject": "../Blog.Core.IRepository/Blog.Core.IRepository.csproj"
+    },
+    "Blog.Core.IService/1.0.0": {
+      "type": "project",
+      "path": "../Blog.Core.IService/Blog.Core.IService.csproj",
+      "msbuildProject": "../Blog.Core.IService/Blog.Core.IService.csproj"
+    },
+    "Blog.Core.Model/1.0.0": {
+      "type": "project",
+      "path": "../Blog.Core.Model/Blog.Core.Model.csproj",
+      "msbuildProject": "../Blog.Core.Model/Blog.Core.Model.csproj"
+    },
+    "Blog.Core.Repository/1.0.0": {
+      "type": "project",
+      "path": "../Blog.Core.Repository/Blog.Core.Repository.csproj",
+      "msbuildProject": "../Blog.Core.Repository/Blog.Core.Repository.csproj"
+    },
+    "Blog.Core.Service/1.0.0": {
+      "type": "project",
+      "path": "../Blog.Core.Service/Blog.Core.Service.csproj",
+      "msbuildProject": "../Blog.Core.Service/Blog.Core.Service.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "Blog.Core.IService >= 1.0.0",
+      "Blog.Core.Service >= 1.0.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 3.1.11",
       "Swashbuckle.AspNetCore >= 5.6.3",
       "System.IdentityModel.Tokens.Jwt >= 6.8.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\a\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Administrator\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Code\\LLBlog.Core\\Blog.Core\\Blog.Core.csproj",
+      "projectUniqueName": "H:\\Source\\NetCore\\Blog.Core\\Blog.Core\\Blog.Core.csproj",
       "projectName": "Blog.Core",
-      "projectPath": "E:\\Code\\LLBlog.Core\\Blog.Core\\Blog.Core.csproj",
-      "packagesPath": "C:\\Users\\a\\.nuget\\packages\\",
-      "outputPath": "E:\\Code\\LLBlog.Core\\Blog.Core\\obj\\",
+      "projectPath": "H:\\Source\\NetCore\\Blog.Core\\Blog.Core\\Blog.Core.csproj",
+      "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+      "outputPath": "H:\\Source\\NetCore\\Blog.Core\\Blog.Core\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\a\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3749,15 +3832,19 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "http://121.196.22.188:8081/repository/nuget-hosted/": {},
-        "http://192.168.8.73:8081/repository/nuget-hosted/": {},
-        "http://localhost:8022/nuget": {},
+        "C:\\Users\\Administrator\\Desktop\\Local nuget repository": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
-          "projectReferences": {}
+          "projectReferences": {
+            "H:\\Source\\NetCore\\Blog.Core\\Blog.Core.IService\\Blog.Core.IService.csproj": {
+              "projectPath": "H:\\Source\\NetCore\\Blog.Core\\Blog.Core.IService\\Blog.Core.IService.csproj"
+            },
+            "H:\\Source\\NetCore\\Blog.Core\\Blog.Core.Service\\Blog.Core.Service.csproj": {
+              "projectPath": "H:\\Source\\NetCore\\Blog.Core\\Blog.Core.Service\\Blog.Core.Service.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -3768,7 +3855,6 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
-        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "Microsoft.AspNetCore.Authentication.JwtBearer": {
             "target": "Package",
@@ -3793,16 +3879,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[3.1.0, 3.1.0]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[3.1.0, 3.1.0]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -3811,7 +3887,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

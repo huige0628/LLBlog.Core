@@ -16,6 +16,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Blog.Core.IService\Blog.Core.IService.csproj" />
+    <ProjectReference Include="..\Blog.Core.Service\Blog.Core.Service.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Update="appsettings.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

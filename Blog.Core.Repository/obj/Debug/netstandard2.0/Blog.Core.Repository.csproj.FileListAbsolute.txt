@@ -7,3 +7,17 @@ E:\Code\LLBlog.Core\Blog.Core.Repository\obj\Debug\netstandard2.0\Blog.Core.Repo
 E:\Code\LLBlog.Core\Blog.Core.Repository\obj\Debug\netstandard2.0\Blog.Core.Repository.csproj.CoreCompileInputs.cache
 E:\Code\LLBlog.Core\Blog.Core.Repository\obj\Debug\netstandard2.0\Blog.Core.Repository.dll
 E:\Code\LLBlog.Core\Blog.Core.Repository\obj\Debug\netstandard2.0\Blog.Core.Repository.pdb
+H:\Source\NetCore\Blog.Core\Blog.Core.Repository\bin\Debug\netstandard2.0\Blog.Core.Repository.deps.json
+H:\Source\NetCore\Blog.Core\Blog.Core.Repository\bin\Debug\netstandard2.0\Blog.Core.Repository.dll
+H:\Source\NetCore\Blog.Core\Blog.Core.Repository\bin\Debug\netstandard2.0\Blog.Core.Repository.pdb
+H:\Source\NetCore\Blog.Core\Blog.Core.Repository\obj\Debug\netstandard2.0\Blog.Core.Repository.csprojAssemblyReference.cache
+H:\Source\NetCore\Blog.Core\Blog.Core.Repository\obj\Debug\netstandard2.0\Blog.Core.Repository.csproj.CoreCompileInputs.cache
+H:\Source\NetCore\Blog.Core\Blog.Core.Repository\obj\Debug\netstandard2.0\Blog.Core.Repository.AssemblyInfoInputs.cache
+H:\Source\NetCore\Blog.Core\Blog.Core.Repository\obj\Debug\netstandard2.0\Blog.Core.Repository.AssemblyInfo.cs
+H:\Source\NetCore\Blog.Core\Blog.Core.Repository\obj\Debug\netstandard2.0\Blog.Core.Repository.dll
+H:\Source\NetCore\Blog.Core\Blog.Core.Repository\obj\Debug\netstandard2.0\Blog.Core.Repository.pdb
+H:\Source\NetCore\Blog.Core\Blog.Core.Repository\bin\Debug\netstandard2.0\Blog.Core.IRepository.dll
+H:\Source\NetCore\Blog.Core\Blog.Core.Repository\bin\Debug\netstandard2.0\Blog.Core.Model.dll
+H:\Source\NetCore\Blog.Core\Blog.Core.Repository\bin\Debug\netstandard2.0\Blog.Core.IRepository.pdb
+H:\Source\NetCore\Blog.Core\Blog.Core.Repository\bin\Debug\netstandard2.0\Blog.Core.Model.pdb
+H:\Source\NetCore\Blog.Core\Blog.Core.Repository\obj\Debug\netstandard2.0\Blog.Core.Repository.csproj.CopyComplete

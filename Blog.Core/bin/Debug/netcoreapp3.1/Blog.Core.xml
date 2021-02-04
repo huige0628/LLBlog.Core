@@ -93,6 +93,14 @@
             <param name="dto"></param>
             <returns></returns>
         </member>
+        <member name="M:Blog.Core.Controllers.WeatherForecastController.Sum(System.Int32,System.Int32)">
+            <summary>
+            仓储模式测试
+            </summary>
+            <param name="x"></param>
+            <param name="y"></param>
+            <returns></returns>
+        </member>
         <member name="P:Blog.Core.Controllers.ProductDto.ProductId">
             <summary>
             产品ID

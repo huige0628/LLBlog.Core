@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
+using Blog.Core.IService;
+using Blog.Core.Service;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -22,6 +24,8 @@ namespace Blog.Core.Controllers
         };
 
         private readonly ILogger<WeatherForecastController> _logger;
+
+        private IBlogService _blogService = new BlogService();
 
         /// <summary>
         /// WeatherForecastController
@@ -63,6 +67,19 @@ namespace Blog.Core.Controllers
                 return BadRequest();
             }
             return Ok(new { Success=true, Code=0 });
+        }
+
+        /// <summary>
+        /// 仓储模式测试
+        /// </summary>
+        /// <param name="x"></param>
+        /// <param name="y"></param>
+        /// <returns></returns>
+        [HttpGet]
+        public ActionResult Sum(int x,int y)
+        {
+            var sum = _blogService.Sum(x, y);
+            return Ok(new { Success = true, Sum = sum });
         }
     }
 

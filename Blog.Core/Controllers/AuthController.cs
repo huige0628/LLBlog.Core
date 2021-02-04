@@ -24,8 +24,8 @@ namespace Blog.Core.Controllers
         [HttpGet]
         public ActionResult GetJwtStr(string name, string pass)
         {
-            string jwtStr = string.Empty;
-            bool suc = false;
+            string jwtStr;
+            bool suc;
 
             // 获取用户的角色名，请暂时忽略其内部是如何获取的，可以直接用 var userRole="Admin"; 来代替更好理解。
             //var userRole = await _sysUserInfoServices.GetUserRoleNameStr(name, pass);
@@ -36,11 +36,6 @@ namespace Blog.Core.Controllers
                 jwtStr = JwtHelper.IssueJwt(tokenModel);//登录，获取到一定规则的 Token 令牌
                 suc = true;
             }
-            else
-            {
-                jwtStr = "login fail!!!";
-            }
-
             return Ok(new
             {
                 success = suc,

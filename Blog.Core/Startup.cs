@@ -3,7 +3,10 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Text;
 using System.Threading.Tasks;
+using Blog.Core.AuthHelper;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -11,6 +14,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 
 namespace Blog.Core
@@ -50,7 +54,7 @@ namespace Blog.Core
                 c.IncludeXmlComments(xmlPath, true);
 
                 //添加header验证信息
-                /*
+                
                 c.AddSecurityRequirement(new Microsoft.OpenApi.Models.OpenApiSecurityRequirement()
                 {
                     {
@@ -71,8 +75,38 @@ namespace Blog.Core
                     In = ParameterLocation.Header,//jwt默认存放Authorization信息的位置(请求头中)
                     Type = SecuritySchemeType.ApiKey
                 });
-                */
+
+                
             });
+
+            //读取配置文件
+            var audienceConfig = Configuration.GetSection("Audience");
+            var symmetricKeyAsBase64 = audienceConfig["Secret"];
+            var keyByteArray = Encoding.ASCII.GetBytes(symmetricKeyAsBase64);
+            var signingKey = new SymmetricSecurityKey(keyByteArray);
+
+            //2.1【官方认证】
+            //services.AddAuthentication(x =>
+            //{
+            //    x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+            //    x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            //})
+            // .AddJwtBearer(o =>
+            // {
+            //     o.TokenValidationParameters = new TokenValidationParameters
+            //     {
+            //         ValidateIssuerSigningKey = true,
+            //         IssuerSigningKey = signingKey,
+            //         ValidateIssuer = true,
+            //         ValidIssuer = audienceConfig["Issuer"],//发行人
+            //             ValidateAudience = true,
+            //         ValidAudience = audienceConfig["Audience"],//订阅人
+            //             ValidateLifetime = true,
+            //         ClockSkew = TimeSpan.Zero,
+            //         RequireExpirationTime = true,
+            //     };
+            // });
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -90,8 +124,10 @@ namespace Blog.Core
             });
 
             app.UseRouting();
+            app.UseMiddleware<JwtTokenAuth>();
 
-            app.UseAuthorization();
+            //app.UseAuthentication(); //官方认证
+            app.UseAuthorization(); //授权
 
             app.UseEndpoints(endpoints =>
             {

@@ -1,0 +1,9 @@
+E:\Code\LLBlog.Core\Blog.Core.IService\bin\Debug\netstandard2.0\Blog.Core.IService.deps.json
+E:\Code\LLBlog.Core\Blog.Core.IService\bin\Debug\netstandard2.0\Blog.Core.IService.dll
+E:\Code\LLBlog.Core\Blog.Core.IService\bin\Debug\netstandard2.0\Blog.Core.IService.pdb
+E:\Code\LLBlog.Core\Blog.Core.IService\obj\Debug\netstandard2.0\Blog.Core.IService.csprojAssemblyReference.cache
+E:\Code\LLBlog.Core\Blog.Core.IService\obj\Debug\netstandard2.0\Blog.Core.IService.AssemblyInfoInputs.cache
+E:\Code\LLBlog.Core\Blog.Core.IService\obj\Debug\netstandard2.0\Blog.Core.IService.AssemblyInfo.cs
+E:\Code\LLBlog.Core\Blog.Core.IService\obj\Debug\netstandard2.0\Blog.Core.IService.csproj.CoreCompileInputs.cache
+E:\Code\LLBlog.Core\Blog.Core.IService\obj\Debug\netstandard2.0\Blog.Core.IService.dll
+E:\Code\LLBlog.Core\Blog.Core.IService\obj\Debug\netstandard2.0\Blog.Core.IService.pdb

@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "H:\\Source\\NetCore\\Blog.Core\\Blog.Core\\Blog.Core.csproj": {}
+    "E:\\Code\\LLBlog.Core\\Blog.Core\\Blog.Core.csproj": {}
   },
   "projects": {
-    "H:\\Source\\NetCore\\Blog.Core\\Blog.Core\\Blog.Core.csproj": {
+    "E:\\Code\\LLBlog.Core\\Blog.Core\\Blog.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "H:\\Source\\NetCore\\Blog.Core\\Blog.Core\\Blog.Core.csproj",
+        "projectUniqueName": "E:\\Code\\LLBlog.Core\\Blog.Core\\Blog.Core.csproj",
         "projectName": "Blog.Core",
-        "projectPath": "H:\\Source\\NetCore\\Blog.Core\\Blog.Core\\Blog.Core.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "H:\\Source\\NetCore\\Blog.Core\\Blog.Core\\obj\\",
+        "projectPath": "E:\\Code\\LLBlog.Core\\Blog.Core\\Blog.Core.csproj",
+        "packagesPath": "C:\\Users\\a\\.nuget\\packages\\",
+        "outputPath": "E:\\Code\\LLBlog.Core\\Blog.Core\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\a\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,11 +25,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Users\\Administrator\\Desktop\\Local nuget repository": {},
+          "http://121.196.22.188:8081/repository/nuget-hosted/": {},
+          "http://192.168.8.73:8081/repository/nuget-hosted/": {},
+          "http://localhost:8022/nuget": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -38,10 +44,19 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[3.1.11, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[5.6.3, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.8.0, )"
             }
           },
           "imports": [
@@ -54,6 +69,16 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -62,7 +87,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

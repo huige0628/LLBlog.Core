@@ -1,0 +1,9 @@
+E:\Code\LLBlog.Core\Blog.Core.Model\bin\Debug\netstandard2.0\Blog.Core.Model.deps.json
+E:\Code\LLBlog.Core\Blog.Core.Model\bin\Debug\netstandard2.0\Blog.Core.Model.dll
+E:\Code\LLBlog.Core\Blog.Core.Model\bin\Debug\netstandard2.0\Blog.Core.Model.pdb
+E:\Code\LLBlog.Core\Blog.Core.Model\obj\Debug\netstandard2.0\Blog.Core.Model.csprojAssemblyReference.cache
+E:\Code\LLBlog.Core\Blog.Core.Model\obj\Debug\netstandard2.0\Blog.Core.Model.AssemblyInfoInputs.cache
+E:\Code\LLBlog.Core\Blog.Core.Model\obj\Debug\netstandard2.0\Blog.Core.Model.AssemblyInfo.cs
+E:\Code\LLBlog.Core\Blog.Core.Model\obj\Debug\netstandard2.0\Blog.Core.Model.csproj.CoreCompileInputs.cache
+E:\Code\LLBlog.Core\Blog.Core.Model\obj\Debug\netstandard2.0\Blog.Core.Model.dll
+E:\Code\LLBlog.Core\Blog.Core.Model\obj\Debug\netstandard2.0\Blog.Core.Model.pdb
